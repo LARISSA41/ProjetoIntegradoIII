@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="Estilos_tela_produto.css">
+</head>
+<body>
+  <main class="container">
+    <div class="left-panel">
+      <h1>Cadastre seus <br> produtos!</h1>
+      <p>Acesse sua conta<br> agora mesmo</p>
+      <button class="btn entrar">Entrar</button>
+    </div>
+
+    <div class="right-panel">
+      <h2>Formulário de Cadastro</h2>
+      <form id="form-cadastro">
+        <label>Nome do Produto:</label>
+        <input type="text" id="nome" required>
+
+        <label>Descrição:</label>
+        <input type="text" id="descricao" required>
+
+        <label>Categoria:</label>
+        <input type="text" id="categoria" required>
+
+        <label>Preço:</label>
+        <input type="text" id="preco" required>
+
+        <label>Desconto:</label>
+        <input type="text" id="desconto">
+
+        <label>Outros detalhes:</label>
+        <input type="password" id="detalhes">
+
+        <small>🔼 navegar em outros cadastros</small>
+
+        <div class="botoes">
+          <button type="submit" class="btn cadastrar">Cadastrar</button>
+          <button type="reset" class="btn cancelar">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+<script src="tela_produto_js.js"></script>
+</body>
+</html>

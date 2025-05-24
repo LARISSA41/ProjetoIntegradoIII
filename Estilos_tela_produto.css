@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e5e5e5;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  padding: 40px;
+}
+
+.left-panel {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.left-panel h1 {
+  color: #d142b6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.left-panel p {
+  color: #35072b;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btn.entrar {
+  background-color: #ec8ddf;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.right-panel {
+  background-color: #e07ed6;
+  color: white;
+}
+
+.right-panel h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+form input {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+form small {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #fdfdfd;
+}
+
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn.cadastrar {
+  background-color: #dedede;
+  color: black;
+}
+
+.btn.cancelar {
+  background-color: #f7aeea;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    padding: 30px;
+  }
+}
+
+.lista-produtos {
+  margin-top: 30px;
+  background-color: #fce9f8;
+  padding: 15px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.item-produto {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.item-produto .acoes {
+  margin-top: 5px;
+}
+
+.item-produto button {
+  margin-right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
